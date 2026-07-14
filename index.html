@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プライバシーポリシー - PasteCal</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    line-height: 1.8;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+    color: #1c1c1e;
+    background: #fafafa;
+  }
+  h1 {
+    font-size: 1.6em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 12px;
+  }
+  h2 {
+    font-size: 1.2em;
+    margin-top: 2em;
+    color: #333;
+  }
+  .updated {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+  }
+  a {
+    color: #0F766E;
+  }
+  nav {
+    margin-bottom: 2em;
+    font-size: 0.9em;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 0.95em;
+  }
+  th {
+    background: #f0f0f0;
+  }
+</style>
+</head>
+<body>
+
+<nav><a href="./terms.html">利用規約はこちら</a></nav>
+
+<h1>プライバシーポリシー</h1>
+<p class="updated">制定日：2026年7月14日</p>
+
+<p>
+本ポリシーは、iOSアプリ「PasteCal」（以下「本アプリ」）における
+利用者情報の取り扱いについて定めるものです。
+</p>
+
+<h2>1. 収集する情報とアクセスする権限</h2>
+<p>
+本アプリは、以下の情報にアクセスします。
+</p>
+<ul>
+  <li>クリップボード（コピーしたテキスト）：利用者が明示的に「貼り付けて解析」操作を行った際にのみ読み取ります。バックグラウンドでの常時監視は行いません。</li>
+  <li>カレンダー（EventKit、書き込みのみのアクセス）：解析結果を利用者の確認を経てiOS標準カレンダーに登録するためにのみ使用します。既存の予定を読み取ることはありません。</li>
+</ul>
+<p>
+本アプリは、氏名・メールアドレス・位置情報などの個人を特定する情報を収集しません。
+アカウント登録機能もありません。
+</p>
+
+<h2>2. 外部サービスへの情報送信</h2>
+<p>
+本アプリの一部機能（メッセージ本文からの日時・タイトル・場所の自動抽出）は、
+利用者が貼り付けたテキストの内容を、以下の外部サービスに送信して処理します。
+</p>
+<ul>
+  <li><strong>Anthropic, Inc.（Claude API）</strong>：貼り付けられたテキスト本文を解析目的で送信します。送信は本アプリが用意するプロキシサーバー（Cloudflare Workers）を経由し、Anthropic社のAPI利用規約およびプライバシーポリシーに基づき処理されます。</li>
+  <li><strong>Cloudflare, Inc.（Cloudflare Workers）</strong>：上記の送信を中継するプロキシとして機能します。テキスト内容はAnthropic社への転送のためにのみ一時的に扱われ、恒久的な保存は行いません。</li>
+</ul>
+<p>
+送信されるテキストには、利用者が意図的にコピーした範囲の内容が含まれます。
+本アプリは、送信前にテキストの内容を選別・加工することはありません。
+シンプルな日時のみの貼り付け（例：「7/24 19:30」のような形式）については、
+端末内の処理（NSDataDetector）のみで完結し、外部送信は行いません。
+</p>
+
+<h2>3. アプリ内課金・決済情報</h2>
+<p>
+本アプリは、Appleの提供するStoreKitを通じて月額サブスクリプション（Mini／Light／Standard）を提供しています。
+決済情報（クレジットカード番号等）は本アプリおよび開発者には一切共有されず、Apple社が管理します。
+本アプリが保持するのは、契約中のプラン種別および当月の利用回数のみです。
+</p>
+
+<h2>4. 広告・第三者解析ツール</h2>
+<p>
+本アプリは広告を表示しません。Google Analytics等の第三者解析SDKも組み込んでいません。
+</p>
+
+<h2>5. データの保存場所</h2>
+<p>
+本アプリの利用履歴（過去の解析結果の一覧表示用データ）は、利用者の端末内にのみ保存されます。
+開発者のサーバーに利用者のデータが恒久的に保存されることはありません。
+</p>
+
+<h2>6. お問い合わせ</h2>
+<p>
+本ポリシーに関するお問い合わせは、以下までご連絡ください。<br>
+taku222.appdev@ymail.ne.jp
+</p>
+
+<h2>7. 改定</h2>
+<p>
+本ポリシーの内容は、法令の変更やアプリ機能の追加に伴い、予告なく改定されることがあります。
+重要な変更がある場合は、アプリ内でお知らせします。
+</p>
+
+</body>
+</html>
